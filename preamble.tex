@@ -1,0 +1,54 @@
+\documentclass[fancyheaders,chapterformata]{thesis}
+\raggedbottom % causes excess space on pages to be moved to the bottom. Remove
+               % to have excess space inserted between paragraphs instead.
+
+\usepackage[euler]{textgreek}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% Make text in figure legends singlespaced:
+\usepackage[font=singlespacing, labelfont=bf]{caption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{csquotes}
+\usepackage[unicode]{hyperref}
+\usepackage{nameref}
+\usepackage[rightcaption]{sidecap}
+\sidecaptionvpos{figure}{t}
+% some added fixes
+% this defines \bbl@main@language otherwise it will complain
+\usepackage[english]{babel}
+% prevent figures from floating above section
+\usepackage[section]{placeins}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+% extends subfiles
+\usepackage{subfiles}
+\usepackage[toc,page]{appendix}
+\usepackage{tocloft}
+% biblatex
+\usepackage[style=apa,backend=biber,alldates=year,doi=false,autolang=other,natbib=true,uniquename=false]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{library.bib}
+
+\newcommand{\argmin}{\operatornamewithlimits{arg\,min}}
+\newcommand{\argmax}{\arg \max}
+\newcommand{\deri}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\loss}{{\cal L}} \newcommand{\Real}{{\cal R}}
+\newcommand{\Zset}{{\cal Z}}
+\newcommand{\Ybar}{\bar{Y}}
+\newcommand{\BlackBox}{\rule{1.5ex}{1.5ex}}  % end of proof
+
+% add code for dealing with inlinecode
+\newcommand{\code}[1]{\texttt{#1}}
+
+% add for code tracking Equations
+% keep track of a equations
+\newcommand{\listequationsname}{List of Equations}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{%
+\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+% set indent to be same as figure list
+\setlength{\cftmyequationsindent}{\cftfigindent}
+\setlength{\cftmyequationsnumwidth}{\cftfignumwidth}

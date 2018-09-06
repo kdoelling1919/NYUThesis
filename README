@@ -1,0 +1,35 @@
+Setup
+-----
+Make sure you have [LaTeX](http://www.latex-project.org) at a minimum.
+For Mac users, [MacTeX](http://tug.org/mactex/) is an easy-to-use installer.
+
+For markdown writers:
+
+  If you are writing in markdown, make sure you have [pandoc](http://pandoc.org)
+  installed prior to compiling your file, otherwise it won't work.
+
+
+Usage
+-----
+
+Edit main.tex and *.markdown files.
+
+  e.g. within preamble.tex, modify `\addbibresource{/path/to/file}` with bibtex file.
+
+To compile the thesis:
+
+  $ make pdf
+
+To compile one chapter into pdf:
+
+  $ make CHAPTERDIR
+
+  where CHAPTERDIR is the name of a directory within the same directory as Makefile which contains the chapter of interest. It assumes the primary ,tex file for the chapter is called CHAPTERDIR/main.tex
+
+To create an abstract page for the preliminary submission:
+
+  $ make abstract-page
+
+To clean extra files:
+
+  $ make clean
