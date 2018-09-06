@@ -1,0 +1,58 @@
+\input{preamble}
+
+\thesistitle{Dissertation Title: A title of great importance}
+\author{Author Has Name}
+\month{Month}
+\year{YEAR}
+\degree{Doctor of Philosophy}
+\advisor{Advisor Name}
+\department{Department of Important Studies}
+
+\begin{document}
+
+\sloppy
+\maketitlepages
+
+\begin{dedication}
+\input{front/dedication}
+\end{dedication}
+%
+\begin{acknowledgments}
+\input{front/acknowledgments}
+\end{acknowledgments}
+%
+\clearpage
+\begin{new-abstract}
+\input{abstract}
+\end{new-abstract}
+
+%make sure we are on a new page
+\clearpage
+\tableofcontents
+
+%List Figures and Tables and add entries to the Table of Contents.
+\lofTOC
+% no tables. Commenting this out.
+\lotTOC
+
+% include list of equations
+\clearpage
+% present the list
+\listofmyequations
+% add to table of contents
+\addcontentsline{toc}{chapter}{List of Equations}
+\clearpage
+\begin{introduction}
+\subfile{intro/main.tex}
+\end{introduction}
+
+\chapter{On Cognition}
+\subfile{cognition/main}\label{ch:cog}
+
+\chapter{On Perception}\label{ch:per}
+\subfile{perception/main}
+
+\clearpage
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+\end{document}
