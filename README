@@ -1,7 +1,10 @@
 Why
 -----
 This is a template for a Latex thesis. It is filled with meaningless words but it provides a useful organization of files to help you keep organized.
-For the most part each folder is a chapter, containing all the files needed (figures, text and so forth) for one file.
+The final output is in main.pdf
+It is also provides example of the kinds of things you might want to include: Figures, Tables, Equations, References, etc.
+For the most part each folder is a chapter, containing all the files needed (figures, text and so forth) for one research article.
+The only exception is front which houses all the files before the table of contents.
 For quick use, you can compile one chapter and see how it looks or send it to a friend for review.
 Note how the chapters are not named "Chapter1" "Chapter2" etc. This will be useful if you decide to move chapters around later on.
 
