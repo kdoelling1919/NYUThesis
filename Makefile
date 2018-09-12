@@ -19,4 +19,4 @@ $(targets) :
 	rm "$@"/"$@".tex
 
 clean :
-	rm -f *.aux *.bbl *.bcf *.blg *.log *.run.xml *.out *.equ *.toc *.lof *.fdb_latexmk *.fls
+	rm -f *.aux *.bbl *.bcf *.blg *.log *.run.xml *.out *.equ *.toc *.lof *.lot *.fdb_latexmk *.fls
