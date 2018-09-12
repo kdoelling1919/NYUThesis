@@ -1,3 +1,10 @@
+Why
+-----
+This is a template for a Latex thesis. It is filled with meaningless words but it provides a useful organization of files to help you keep organized.
+For the most part each folder is a chapter, containing all the files needed (figures, text and so forth) for one file.
+For quick use, you can compile one chapter and see how it looks or send it to a friend for review.
+Note how the chapters are not named "Chapter1" "Chapter2" etc. This will be useful if you decide to move chapters around later on.
+
 Setup
 -----
 Make sure you have [LaTeX](http://www.latex-project.org) at a minimum.
@@ -33,3 +40,19 @@ To create an abstract page for the preliminary submission:
 To clean extra files:
 
   $ make clean
+
+Other Tips
+-----
+When you write, put each sentence on its own line using the return key.
+The pdf will still be formatted normally (paragraphs are delineated by a clear space).
+This will be better for git versioning.
+
+The margining is currently setup for two-sided page viewing (like a book).
+This is why they appear uneven and switching.
+If you view the preview in pdf and go to View -> Two Pages you will see correct viewing.
+The smaller margin on each page should be pointed towards the middle.
+If it's not you may want to add a clear page at page 3 to move things around.
+If you do, edit thesis.cls line no. 33.
+Replace the number 3, with 4 for correct paging.
+
+Any other questions, feel free to make an issue.
